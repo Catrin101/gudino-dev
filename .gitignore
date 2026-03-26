@@ -1,0 +1,19 @@
+# Documentación interna del agente
+docs/
+AGENT.md
+skills-lock.json
+
+# Configuración de Qwen
+.qwen/
+.agents/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
