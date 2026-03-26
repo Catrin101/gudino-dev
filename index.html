@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gudiño Dev | Desarrollo de Software Profesional — Mexicali, México</title>
+  <meta name="description" content="Gudiño Dev — Empresa de desarrollo de software en Mexicali. Construimos sistemas web a medida, aplicaciones de gestión empresarial y bases de datos. Proyectos entregados, en producción.">
+  <meta name="author" content="Gudiño Dev">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gudiño Dev | Desarrollo de Software">
+  <meta property="og:description" content="Sistemas web que funcionan de verdad. Desarrollo a medida desde análisis hasta despliegue.">
+  <meta property="og:url" content="https://catrin101.github.io/gudino-dev">
+  <meta property="og:type" content="website">
+  
+  <!-- Canonical -->
+  <link rel="canonical" href="https://catrin101.github.io/gudino-dev">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./assets/css/variables.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/layout.css">
+  <link rel="stylesheet" href="./assets/css/components.css">
+  <link rel="stylesheet" href="./assets/css/sections.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="#" class="navbar-logo">GUDIÑO DEV</a>
+      
+      <div class="navbar-menu" id="navbar-menu">
+        <ul class="nav-links">
+          <li><a href="#services" data-i18n="nav.services">Servicios</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Proyectos</a></li>
+          <li><a href="#about" data-i18n="nav.about">Nosotros</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+        
+        <div class="lang-switcher" role="group" aria-label="Seleccionar idioma / Select language">
+          <button class="lang-btn active" data-lang="es" aria-label="Español">ES</button>
+          <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        </div>
+      </div>
+      
+      <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="hero-headline" data-i18n="hero.headline">Construimos sistemas web que resuelven problemas reales</h1>
+          <p class="hero-subheadline" data-i18n="hero.subheadline">Desarrollo de software a medida para negocios que necesitan resultados, no promesas.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn-primary" data-i18n="hero.cta_primary">Ver Proyectos</a>
+            <a href="#contact" class="btn-secondary" data-i18n="hero.cta_secondary">Contáctanos</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-watermark">&lt;/&gt;</div>
+          <div class="hero-grid"></div>
+        </div>
+        <div class="scroll-indicator">
+          <div class="scroll-arrow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="services.title">Lo Que Construimos</h2>
+        </div>
+        <div class="services-grid" id="services-grid">
+          <!-- Renderizado dinámicamente por JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="projects.title">Proyectos Entregados</h2>
+        </div>
+        <div class="projects-grid" id="projects-grid">
+          <!-- Renderizado dinámicamente por JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="about.title">Por Qué Gudiño Dev</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-text" id="about-text">
+            <!-- Renderizado dinámicamente por JS -->
+          </div>
+          <div class="about-stats" id="about-stats">
+            <!-- Renderizado dinámicamente por JS -->
+          </div>
+          <div class="about-differentiators" id="about-differentiators">
+            <!-- Renderizado dinámicamente por JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stack Section -->
+    <section class="section stack" id="stack">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="stack.title">Nuestro Stack</h2>
+        </div>
+        <div class="stack-content" id="stack-content">
+          <!-- Renderizado dinámicamente por JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="contact.title">¿Tienes un Proyecto?</h2>
+          <p class="section-subtitle" data-i18n="contact.subtitle">Cuéntanos tu idea. Analizamos tu caso sin compromiso y te damos una propuesta técnica honesta.</p>
+        </div>
+        <div class="contact-wrapper">
+          <div class="contact-form-wrapper">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <input type="text" id="name" name="name" required data-i18n-placeholder="contact.form.name">
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" required data-i18n-placeholder="contact.form.email">
+              </div>
+              <div class="form-group">
+                <input type="text" id="company" name="company" data-i18n-placeholder="contact.form.company">
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" rows="5" required data-i18n-placeholder="contact.form.message"></textarea>
+              </div>
+              <button type="submit" class="btn-primary btn-full" data-i18n="contact.form.submit">Enviar Mensaje</button>
+              <div class="form-feedback" id="form-feedback"></div>
+            </form>
+          </div>
+          <div class="contact-info" id="contact-info">
+            <!-- Renderizado dinámicamente por JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3 class="footer-logo">GUDIÑO DEV</h3>
+          <p class="footer-tagline" data-i18n="footer.tagline">Sistemas que funcionan de verdad.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#services" data-i18n="nav.services">Servicios</a>
+          <a href="#projects" data-i18n="nav.projects">Proyectos</a>
+          <a href="#about" data-i18n="nav.about">Nosotros</a>
+          <a href="#contact" data-i18n="nav.contact">Contacto</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/Catrin101" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jose-enrique-gudiño-gomez-46904b20b" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">© 2025 Gudiño Dev. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Data Files -->
+  <script src="./assets/js/data/translations.js"></script>
+  <script src="./assets/js/data/services.js"></script>
+  <script src="./assets/js/data/projects.js"></script>
+  <script src="./assets/js/data/stack.js"></script>
+
+  <!-- Utils -->
+  <script src="./assets/js/utils/i18n.js"></script>
+  <script src="./assets/js/utils/animations.js"></script>
+
+  <!-- Components -->
+  <script src="./assets/js/components/navbar.js"></script>
+  <script src="./assets/js/components/hero.js"></script>
+  <script src="./assets/js/components/services.js"></script>
+  <script src="./assets/js/components/projects.js"></script>
+  <script src="./assets/js/components/about.js"></script>
+  <script src="./assets/js/components/stack.js"></script>
+  <script src="./assets/js/components/contact.js"></script>
+
+  <!-- Main -->
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
