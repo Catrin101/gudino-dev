@@ -132,34 +132,25 @@ function initContactForm() {
     submitBtn.textContent = currentLang === 'es' ? 'Enviando...' : 'Sending...';
     submitBtn.disabled = true;
 
-    // Opción A: Formspree (descomentar y agregar FORM_ID real)
-    // try {
-    //   const response = await fetch('https://formspree.io/f/FORM_ID', {
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/json' },
-    //     body: JSON.stringify(data)
-    //   });
-    //   if (response.ok) {
-    //     showFeedback(feedback, translations[currentLang].contact.form.success, 'success');
-    //     form.reset();
-    //   } else {
-    //     throw new Error('Formspree error');
-    //   }
-    // } catch (error) {
-    //   showFeedback(feedback, translations[currentLang].contact.form.error, 'error');
-    // }
-
-    // Opción B: Mailto fallback (simulado)
-    setTimeout(() => {
-      showFeedback(feedback, translations[currentLang].contact.form.success, 'success');
-      form.reset();
+    // Envío a Formspree
+    try {
+      const response = await fetch('https://formspree.io/f/xqegapdy', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      if (response.ok) {
+        showFeedback(feedback, translations[currentLang].contact.form.success, 'success');
+        form.reset();
+      } else {
+        throw new Error('Formspree error');
+      }
+    } catch (error) {
+      showFeedback(feedback, translations[currentLang].contact.form.error, 'error');
+    } finally {
       submitBtn.textContent = originalText;
       submitBtn.disabled = false;
-
-      // Abrir cliente de email como fallback
-      const mailtoLink = `mailto:gudinodev@gmail.com?subject=${encodeURIComponent('Nuevo mensaje de contacto - ' + data.name)}&body=${encodeURIComponent(`Nombre: ${data.name}\nEmail: ${data.email}\nEmpresa: ${data.company || 'N/A'}\n\nMensaje:\n${data.message}`)}`;
-      window.location.href = mailtoLink;
-    }, 1500);
+    }
   });
 }
 
